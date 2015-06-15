@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	 
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="poll.js" ></script>
+	</head>
+	<body>
+		<h2>Hello World!</h2>
+			<div id="content">
+				Name  :<span id="name"></span><br/>
+				Email :<span id="email"></span><br/>
+				Desc  :<span id="body"></span><br/>
+				
+			</div>
+			<div id="wait">
+				We are preparing your data...
+			</div>
+			<button id="btn" >Get Value </button>
+
+	</body>
+	<script type="text/javascript">
+	 <!-- 
+		$(document).ready(function(){
+			$('#content').hide();
+			$('#wait').hide();
+			var task = new AsyncTask();
+			$('#btn').click(task.getData);		
+	
+		});
+		-->
+	</script>
+</html>

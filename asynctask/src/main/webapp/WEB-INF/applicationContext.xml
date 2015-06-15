@@ -8,8 +8,8 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
  
    <!--  <context:annotation-config /> -->
-   <context:annotation-config/>
-    <context:component-scan base-package="com.async.*" />
+    <context:annotation-config/>
+    <context:component-scan base-package="com.async.task.*" />
     
     <bean id="restTemplate" class="org.springframework.web.client.RestTemplate" />
     

@@ -105,5 +105,18 @@ public class Comments {
 	{
 		this.body = body;
 	}
+
+	//------------------------------------------------------------------
+	/* 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString()
+	{
+		return "{Comments: [{postId:" + postId + ", id:" + id + ", name:" + name
+				+ ", email:" + email + ", body:" + body + "}]}";
+	}
+	
+	
 	
 }

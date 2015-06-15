@@ -6,10 +6,13 @@
 // ------------------------------------------------------------------
 package com.async.task.serivce;
 
+import java.util.concurrent.Future;
+
 import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.web.client.RestTemplate;
 
 import com.aysnc.task.vo.Comments;
+import com.aysnc.task.vo.DataWrapper;
 
 /*----------------------------------------------------------------
  * @author Rahul
@@ -17,26 +20,13 @@ import com.aysnc.task.vo.Comments;
  *----------------------------------------------------------------*/
 public interface IDataService {
 	
-	/**
-	 *
-	 * @return
-	 */
-	//------------------------------------------------------------------
-	/**
-	 * @return the restTemplate
-	 */
-	public abstract RestTemplate getRestTemplate();
-	
-	/**
-	 * @param restTemplate the restTemplate to set
-	 */
-	public abstract void setRestTemplate(RestTemplate restTemplate);
 	
 	/**
 	 *
 	 * @return
+	 * @throws InterruptedException 
 	 */
 	//------------------------------------------------------------------
-	public AsyncResult<Comments> getServiceData();
+	public Future<DataWrapper> getServiceData(String type) throws InterruptedException;
 	
 }
